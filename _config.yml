@@ -1,0 +1,22 @@
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "0.0.0.0" # the base hostname & protocol for your site
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# COLLECTIONS
+collections:
+  portfolio:
+    output: true
+
+# BUILD SETTINGS
+host: 0.0.0.0
+port: 4000
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+plugins: [jekyll-paginate]
